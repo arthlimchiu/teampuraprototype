@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="symph.teampuraprototype.activities.LoginActivity">
+
+    <!--<EditText-->
+    <!--android:id="@+id/et_email"-->
+    <!--android:layout_width="256dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignLeft="@+id/et_password"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignStart="@+id/et_password"-->
+    <!--android:layout_marginBottom="186dp"-->
+    <!--android:background="@drawable/rounded_edit_text"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:hint="Email"-->
+    <!--android:inputType="textEmailAddress"-->
+    <!--android:padding="16dp"/>-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/et_password"-->
+    <!--android:layout_width="256dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignTop="@+id/et_email"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="72dp"-->
+    <!--android:background="@drawable/rounded_edit_text"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:hint="Password"-->
+    <!--android:inputType="textPassword"-->
+    <!--android:padding="16dp"/>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/email_login_text_layout"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password_login_text_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/password_login_text_layout"
+        android:layout_marginBottom="192dp">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/password_login_text_layout"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/email_login_text_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="16dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:src="@drawable/logo"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_login_text_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_button"
+        android:drawableEnd="@drawable/ic_arrow_forward_white_24dp"
+        android:drawableRight="@drawable/ic_arrow_forward_white_24dp"
+        android:gravity="start|center"
+        android:paddingEnd="16dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="16dp"
+        android:text="Login"
+        android:textColor="@android:color/white"/>
+
+    <!--<com.facebook.login.widget.LoginButton-->
+    <!--android:id="@+id/fb_login_button"-->
+    <!--android:layout_width="256dp"-->
+    <!--android:layout_height="128dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_above="@+id/google_sign_in_button"/>-->
+
+
+    <!--<Button-->
+    <!--android:id="@+id/google_sign_in_button"-->
+    <!--android:layout_width="256dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="16dp"-->
+    <!--android:background="@drawable/common_signin_btn_text_dark"-->
+    <!--android:text="Sign in with Google+"-->
+    <!--android:textAllCaps="false"-->
+    <!--android:textColor="@android:color/white"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/google_sign_out_button"-->
+    <!--android:layout_width="256dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="16dp"-->
+    <!--android:background="@drawable/common_signin_btn_text_dark"-->
+    <!--android:text="Sign Out"-->
+    <!--android:textAllCaps="false"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:visibility="gone"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="No user id"-->
+    <!--android:id="@+id/user_id"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:layout_below="@+id/google_sign_out_button"-->
+    <!--android:layout_alignLeft="@+id/fb_login_button"-->
+    <!--android:layout_alignStart="@+id/fb_login_button"-->
+    <!--android:layout_marginTop="56dp"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="No access token"-->
+    <!--android:id="@+id/access_token"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:layout_below="@+id/user_id"-->
+    <!--android:layout_alignLeft="@+id/user_id"-->
+    <!--android:layout_alignStart="@+id/user_id"-->
+    <!--android:layout_marginTop="39dp"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/login_button"-->
+    <!--style="?android:borderlessButtonStyle"-->
+    <!--android:layout_width="256dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/google_sign_in_button"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:text="Login"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/sign_in_status"-->
+    <!--android:layout_width="256dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/login_button"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="58dp"-->
+    <!--android:textColor="@android:color/white"/>-->
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/nav_group_main"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_channels"
+            android:icon="@drawable/ic_send_black_24dp"
+            android:title="Channels"/>
+        <item
+            android:id="@+id/nav_private_groups"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Private Groups"/>
+        <item
+            android:id="@+id/nav_direct_messages"
+            android:icon="@drawable/ic_mail_black_24dp"
+            android:title="Direct Messages"/>
+    </group>
+
+    <group
+        android:id="@+id/nav_group_preferences"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_build_black_24dp"
+            android:title="About"/>
+    </group>
+    <group
+        android:id="@+id/nav_group_functions"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sign_out"
+            android:icon="@drawable/ic_close_black_24dp"
+            android:title="Sign out"/>
+    </group>
+</menu>
